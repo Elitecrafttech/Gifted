@@ -1,0 +1,497 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navbar{
+        @apply size-full flex justify-between
+        px-[10px] md:px-[55px] items-center h-[100px]
+    }
+    .navimg{
+        @apply h-[100px]
+    }
+     .list{
+        @apply flex flex-col md:hidden
+        bg-black md:bg-white text-white
+        md:text-black md:gap-[100px] text-center
+        h-[0vh] overflow-hidden absolute
+        top-[75px] right-[20px] left-[20px]
+        text-[20px] rounded-lg font-medium
+        gap-[30px] items-center
+     }
+     .list ul{
+        @apply flex flex-col gap-[30px]
+     }
+     .list button{
+        @apply bg-[#5852FE] text-[#FFFFFF]
+        p-[6px] w-[50vw] rounded-[12px] text-center
+        text-[18px]
+     }
+     .desktop{
+        @apply hidden md:flex md:gap-[100px]
+     }
+    .desktop ul{
+        @apply flex flex-col md:flex-row
+        md:gap-[50px] font-bold
+        tracking-[1px]
+    }
+    .desktop button{
+        @apply bg-[#5852FE] text-[#FFFFFF]
+        p-[6px] w-[10vw] rounded-[12px] text-center
+        text-[18px]
+    }
+    .open{
+        @apply h-[50px] 
+    }
+    .close{
+        @apply hidden h-[30px] relative right-[20px]
+    }
+    .togbtn{
+        @apply flex md:hidden items-center
+    }
+    .hero{
+        @apply flex flex-col md:flex-row
+        items-center justify-center gap-[100px]
+        md:gap-[50px] py-[100px]
+    }
+    .breed{
+        @apply flex flex-col gap-[40px] items-center
+        md:items-start
+    }
+    .breed h1{
+        @apply font-bold text-[30px] text-center
+        md:text-left md:text-[40px] md:w-[35vw]
+    }
+    .breed p{
+        @apply text-[25px] text-[#494949]
+        text-center md:text-[25] md:text-left
+        md:w-[46vw]
+    }
+    .breed button{
+        @apply bg-[#5852FE] text-[#FFFFFF]
+        p-[6px] w-[37vw] rounded-[12px]
+        text-center text-[18px] md:w-[13vw]
+    }
+    .group img{
+        @apply h-[250px] md:h-[400px] 
+    }
+    .About{
+        @apply flex flex-col size-full md:pl-[55px] 
+        gap-[40px] text-center md:text-left
+      bg-[#5852FE] py-[50px]
+    }
+    .About h1{
+        @apply font-bold text-[#FFFFFF]
+        text-[35px]
+
+    }
+    .About p{
+        @apply md:w-[30vw] text-[20px] text-[#CFCDFF]
+        md:text-base
+    }
+    .worksec{
+        @apply flex flex-col gap-[50px] items-center
+        py-[80px]
+    }
+    .worksec button{
+        @apply border-2 border-black p-[10px]
+        w-[50vw] md:w-[20vw] font-bold text-[20px]
+        md:text-[15px]
+    }
+    .work1{
+        @apply flex flex-col gap-[100px]
+    }
+    .business, .contest{
+        @apply flex flex-col md:flex-row
+        justify-center gap-[60px] md:gap-[20%]
+    }
+    .B1, .B2, .C1, .C2{
+        @apply flex flex-col gap-[20px] items-center
+    }
+    .business img, .contest img{
+        @apply h-[250px] md:h-[400px]
+    }
+    .other{
+        @apply w-[100vw] text-center md:w-[28vw]
+        md:text-left text-[20px] text-[#7A7A7A]
+    }
+    .quiz{
+        @apply w-[90vw] text-center md:w-[29vw]
+        md:text-left text-[20px] text-[#7A7A7A]
+    }
+    .B2 p, .C1 p, .C2 p{
+        @apply w-[83vw] md:w-[25vw] text-[20px]
+        text-center md:text-left text-[#7A7A7A]
+    }
+    .learn{
+        @apply flex flex-col md:flex-row items-center
+        justify-center gap-[30px] p-[50px]
+    }
+    .std{
+        @apply flex flex-col bg-[#5852FE] p-[30px]
+        items-center text-center gap-[15px]
+        shadow-sm shadow-black rounded-2xl
+    }
+    .male{
+        @apply h-[50px]
+    }
+    .std h1{
+        @apply font-bold text-[30px] text-[#FFFFFF]
+    }
+    .std p{
+        @apply w-[80vw] md:w-[19vw] text-[#CFCDFF]
+    }
+    .std button{
+        @apply flex bg-[#FFFFFF] text-[#5852FE]
+        gap-[20px] p-[10px] items-center rounded-lg
+        font-semibold text-[20px] text-center
+    }
+    .std button img{
+        @apply h-[20px]
+    }
+    .win, .earn{
+        @apply flex flex-col bg-[#FFFFFF] p-[30px]
+        items-center text-center gap-[30px]
+        shadow-sm shadow-black rounded-2xl
+    }
+    .win h1, .earn h1{
+        @apply font-bold text-[30px] text-black
+    }
+    .win p{
+        @apply w-[80vw] md:w-[19vw] text-[#7A7A7A]
+    }
+    .winimg{
+        @apply h-[50px]
+    }
+    .win button{
+        @apply flex bg-[#5852FE] text-[#FFFFFF]
+        gap-[20px] p-[10px] items-center rounded-lg
+        font-semibold text-[20px] text-center
+    }
+    .win button img{
+        @apply h-[20px]
+    }
+    .earn p{
+        @apply w-[80vw] md:w-[19vw] text-[#7A7A7A]
+    }
+    .bagimg{
+        @apply h-[50px]
+    }
+    .earn button{
+        @apply flex bg-[#5852FE] text-[#FFFFFF]
+        gap-[20px] p-[10px] items-center rounded-lg
+        font-semibold text-[20px] text-center
+    }
+    .earn button img{
+        @apply h-[20px]
+    }
+    .course{
+        @apply flex flex-col gap-[50px] items-center
+        py-[80px] md:gap-[100px]
+    }
+    .Ava{
+        @apply border-2 border-black p-[10px]
+        w-[50vw] md:w-[20vw] font-bold text-[20px]
+        md:text-[15px]
+    }
+    .technology{
+        @apply flex flex-col md:flex-row items-center
+        justify-center gap-[40px] md:gap-[35%]
+        md:items-start
+    }
+    .tech{
+        @apply flex flex-col gap-[30px]
+    }
+    .uidesign, .backend, .frontend, .page,
+    .cryptocur, .quantum, .graphics, .africa,
+    .history, .production, .defi{
+        @apply flex flex-col bg-[#5852FE]
+        rounded-2xl p-[15px] w-[97vw] md:w-[30vw]
+        gap-[25px]
+        
+    }
+    .ui,.back,.front,.crypto{
+        @apply flex gap-[58%] items-center
+    }
+    .ui1,.back1,.front1,.crpto1{
+        @apply flex gap-[10px] items-center
+    }
+    .ui1 h1,.back1 h1,.front1 h1,.crpto1 h1{
+        @apply font-bold text-white
+    }
+    
+    .uipage{
+        @apply flex gap-[170px] items-center
+    }
+    .page1{
+        @apply flex gap-[10px] items-center
+    }
+    .page1 h1{
+        @apply font-bold text-white
+    }
+    .quan{
+        @apply flex gap-[60%] items-center
+    }
+    .quan1{
+        @apply flex gap-[10px] items-center
+    }
+    .quan1 h1{
+        @apply font-bold text-white
+    }
+    .tech2{
+        @apply flex flex-col gap-[30px]
+    }
+    .grap{
+        @apply flex gap-[55%] items-center
+    }
+    .grap1{
+        @apply flex gap-[10px] items-center
+    }
+    .grap1 h1{
+        @apply font-bold text-white
+    }
+    .afric{
+        @apply flex gap-[130px] items-center
+    }
+    .afric1{
+        @apply flex gap-[10px] items-center
+    }
+    .afric1 h1{
+        @apply font-bold text-white
+    }
+    .hist{
+        @apply flex gap-[55%] items-center
+    }
+    .hist1{
+        @apply flex gap-[10px] items-center
+    }
+    .hist1 h1{
+        @apply font-bold text-white
+    }
+    .product{
+        @apply flex gap-[55%] items-center
+    }
+    .product1{
+        @apply flex gap-[10px] items-center
+    }
+    .product1 h1{
+        @apply font-bold text-white
+    }
+    .def{
+        @apply flex gap-[61%] items-center
+    }
+    .def1{
+        @apply flex gap-[10px] items-center
+    }
+    .def1 h1{
+        @apply font-bold text-white
+    }
+    .btn{
+        @apply flex bg-white rounded-[50%]
+        w-[15px] h-[15px] justify-center items-center 
+    }
+    .content{
+        @apply w-[80vw] md:w-[31vw] text-[#CFCDFF] hidden
+    }
+    .participate{
+        @apply flex flex-col gap-[50px] items-center
+        py-[80px]
+    }
+    .participate button{
+        @apply border-2 border-black p-[10px]
+        w-[60vw] md:w-[20vw] font-bold text-[20px]
+        md:text-[15px]
+    }
+    .task{
+        @apply flex flex-col md:flex-row items-center
+        justify-center gap-[20px] md:gap-[80%]
+    }
+    .task1,.task2{
+        @apply flex flex-col gap-[50px]
+    }
+    .reg,.chall,.plan,.refer{
+        @apply flex flex-col gap-[15px]
+        items-center md:items-start
+    }
+    .reg p,.plan p,.chall p,.refer p{
+        @apply w-[90vw] md:w-[18vw] pl-[33px]
+        text-center md:text-left text-[20px] md:text-base
+    }
+    .reg1,.plan1,.cha,.refer1{
+        @apply flex font-bold text-black gap-[20px]
+        text-[25px] md:text-[20px]
+        text-center md:text-left
+    }
+    .reg1 h1,.plan1 h1,.cha h1,.refer1 h1{
+        @apply text-center md:text-left
+    }
+    .benefit{
+        @apply flex flex-col gap-[80px] items-center
+        py-[80px]
+    }
+    .benefit button{
+        @apply border-2 border-black p-[10px]
+        w-[60vw] md:w-[20vw] font-bold text-[20px]
+        md:text-[15px]
+    }
+    .feature{
+        @apply flex flex-col md:flex-row items-center
+        justify-center gap-[30px]
+    }
+    .fast{
+        @apply flex flex-col gap-[10px] items-center
+        border-2 border-black rounded-[20px] pb-[20px]
+    }
+    .fast img{
+        @apply h-[180px]
+    }
+    .fast p{
+        @apply w-[50vw] md:w-[15vw] text-center
+    }
+    .fast h1{
+        @apply font-bold text-[20px]
+    }
+    .spin{
+        @apply flex flex-col gap-[10px] items-center
+        border-2 border-black rounded-2xl
+        w-[70vw] md:w-[22vw] pb-[20px]
+    }
+    .spin p{
+        @apply w-[50vw] md:w-[15vw] text-center
+    }
+    .spin h1{
+        @apply font-bold text-[20px]
+    }
+    .winn{
+        @apply flex bg-[#D9D9D9] w-[100%]
+        items-center justify-center p-[20px]
+        rounded-t-xl
+    }
+    .winn img{
+        @apply h-[150px]
+    }
+    .compul{
+        @apply flex flex-col gap-[10px] items-center
+        border-2 border-black rounded-2xl
+        w-[70vw] md:w-[22vw] pb-[20px]
+    }
+    .compul h1{
+        @apply font-bold text-[20px]
+        text-center leading-[43px] md:w-[13vw]
+    }
+    .pulsory{
+        @apply flex bg-[#D9D9D9] w-[100%]
+        items-center justify-center p-[20px]
+        rounded-t-xl
+    }
+    .pulsory img{
+        @apply h-[150px]
+    }
+    .colorbt{
+        @apply hidden md:flex md:gap-[10px]
+    }
+    .bt1{
+        @apply bg-[#5852FE] p-[5px] rounded-full
+    }
+    .bt2{
+        @apply bg-[#D9D9D9] p-[5px] rounded-full
+    }
+    .bt3{
+        @apply bg-[#D9D9D9] p-[5px] rounded-full
+    }
+    .trophy{
+        @apply p-[10px] md:p-[40px]
+    }
+    .game{
+        @apply bg-[#5852FE] rounded-2xl p-[20px]
+    }
+    .point{
+        @apply flex flex-col md:flex-row
+        items-center justify-center gap-[30%]
+    }
+    .skill{
+        @apply flex flex-col gap-[30px] text-center
+        md:text-left justify-center
+    }
+    .skill h1{
+        @apply font-bold text-white text-[25px]
+    }
+    .skill p{
+        @apply text-[20px] w-[80vw] md:w-[30vw] text-[#CFCDFF]
+
+    }
+    .skill button{
+        @apply bg-[#292586] p-[13px]
+        rounded-full text-white font-bold
+        w-[40vw] md:w-[15vw] text-[20px] md:p-[7px]
+        self-center
+    }
+    .point img{
+        @apply h-[300px]
+    }
+    .round{
+        @apply flex gap-[10px]
+        items-center justify-center
+    }
+    .rd1{
+        @apply bg-[#FFFFFF] p-[5px] rounded-full
+    }
+    .rd2{
+        @apply bg-[#8C88FE] p-[5px] rounded-full
+    }
+    .rd3{
+        @apply bg-[#8C88FE] p-[5px] rounded-full
+    }
+    .icons{
+        @apply flex justify-center md:justify-start
+        md:pl-[100px] items-center gap-[8px]
+    }
+    .logo img{
+        @apply h-[100px]
+    }
+    .ico{
+        @apply flex gap-[13px]
+    }
+    .ico img{
+        @apply h-[30px]
+    }
+    .footer{
+        @apply flex flex-col bg-[#5852FE] gap-[40px]
+        items-center py-[15px] px-[10px]
+    }
+    .join{
+        @apply flex flex-col gap-[20px]
+    }
+    .join h1{
+        @apply font-bold text-[30px] text-white
+        md:text-[40px] text-center
+    }
+    .letter{
+        @apply flex gap-[2px] md:gap-[1px]
+    }
+    .letter input{
+        @apply p-[10px] w-[67vw] 
+        rounded-l-lg md:w-[30vw] md:p-[7px]
+    }
+    .letter button{
+        @apply font-bold bg-[white] p-[10px]
+        text-[#D80D0D] rounded-r-lg
+        md:p-[7px] md:font-extrabold
+    }
+    .fotelist{
+        @apply flex gap-[25px] md:gap-[160px]
+    }
+    .fotelist h1{
+        @apply font-bold md:font-extrabold text-white
+    }
+    .fotelist div{
+        @apply flex flex-col gap-[15px]
+    }
+    .fotelist ul li{
+        @apply text-[#CFCDFF] md:w-[15vw]
+    }
+    .footer p{
+        @apply text-[#CFCDFF]
+    }
+
+}
