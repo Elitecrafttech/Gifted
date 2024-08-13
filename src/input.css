@@ -211,15 +211,13 @@
         
     }
     .ui,.back,.front,.crypto{
-        @apply flex gap-[56%] items-center
-        w-[25vw] md:w-[]
+        @apply flex items-center
     }
     .ui1,.back1,.front1,.crpto1{
         @apply flex gap-[10px] items-center
     }
     .ui1 h1,.back1 h1,.front1 h1,.crpto1 h1{
         @apply font-bold text-white
-        text-[15px]
     }
     
     .uipage{
@@ -232,7 +230,7 @@
         @apply font-bold text-white
     }
     .quan{
-        @apply flex gap-[60%] items-center
+        @apply flex items-center
     }
     .quan1{
         @apply flex gap-[10px] items-center
@@ -244,7 +242,7 @@
         @apply flex flex-col gap-[30px]
     }
     .grap{
-        @apply flex gap-[55%] items-center
+        @apply flex items-center
     }
     .grap1{
         @apply flex gap-[10px] items-center
@@ -253,7 +251,7 @@
         @apply font-bold text-white
     }
     .afric{
-        @apply flex gap-[130px] items-center
+        @apply flex items-center
     }
     .afric1{
         @apply flex gap-[10px] items-center
@@ -262,7 +260,7 @@
         @apply font-bold text-white
     }
     .hist{
-        @apply flex gap-[55%] items-center
+        @apply flex items-center
     }
     .hist1{
         @apply flex gap-[10px] items-center
@@ -271,7 +269,7 @@
         @apply font-bold text-white
     }
     .product{
-        @apply flex gap-[55%] items-center
+        @apply flex items-center
     }
     .product1{
         @apply flex gap-[10px] items-center
@@ -280,7 +278,7 @@
         @apply font-bold text-white
     }
     .def{
-        @apply flex gap-[61%] items-center
+        @apply flex items-center
     }
     .def1{
         @apply flex gap-[10px] items-center

@@ -1258,15 +1258,7 @@ video {
 
 .ui,.back,.front,.crypto {
   display: flex;
-  width: 25vw;
   align-items: center;
-  gap: 56%;
-}
-
-@media (min-width: 768px) {
-  .ui,.back,.front,.crypto {
-    width: ;
-  }
 }
 
 .ui1,.back1,.front1,.crpto1 {
@@ -1276,7 +1268,6 @@ video {
 }
 
 .ui1 h1,.back1 h1,.front1 h1,.crpto1 h1 {
-  font-size: 15px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1303,7 +1294,6 @@ video {
 .quan {
   display: flex;
   align-items: center;
-  gap: 60%;
 }
 
 .quan1 {
@@ -1327,7 +1317,6 @@ video {
 .grap {
   display: flex;
   align-items: center;
-  gap: 55%;
 }
 
 .grap1 {
@@ -1345,7 +1334,6 @@ video {
 .afric {
   display: flex;
   align-items: center;
-  gap: 130px;
 }
 
 .afric1 {
@@ -1363,7 +1351,6 @@ video {
 .hist {
   display: flex;
   align-items: center;
-  gap: 55%;
 }
 
 .hist1 {
@@ -1381,7 +1368,6 @@ video {
 .product {
   display: flex;
   align-items: center;
-  gap: 55%;
 }
 
 .product1 {
@@ -1399,13 +1385,11 @@ video {
 .\!def {
   display: flex;
   align-items: center;
-  gap: 61%;
 }
 
 .def {
   display: flex;
   align-items: center;
-  gap: 61%;
 }
 
 .def1 {
@@ -2776,6 +2760,50 @@ video {
   justify-items: stretch;
 }
 
+.gap-\[13\%\] {
+  gap: 13%;
+}
+
+.gap-\[30\%\] {
+  gap: 30%;
+}
+
+.gap-\[32\%\] {
+  gap: 32%;
+}
+
+.gap-\[44\%\] {
+  gap: 44%;
+}
+
+.gap-\[46\%\] {
+  gap: 46%;
+}
+
+.gap-\[47\%\] {
+  gap: 47%;
+}
+
+.gap-\[50\%\] {
+  gap: 50%;
+}
+
+.gap-\[52\%\] {
+  gap: 52%;
+}
+
+.gap-\[56\%\] {
+  gap: 56%;
+}
+
+.gap-\[60\%\] {
+  gap: 60%;
+}
+
+.gap-\[61\%\] {
+  gap: 61%;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -3400,6 +3428,14 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-bold {
