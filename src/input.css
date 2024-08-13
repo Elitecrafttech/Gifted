@@ -52,7 +52,7 @@
     .hero{
         @apply flex flex-col md:flex-row
         items-center justify-center gap-[100px]
-        md:gap-[50px] py-[100px]
+        md:gap-[50px] pb-[50px]
     }
     .breed{
         @apply flex flex-col gap-[40px] items-center
@@ -76,8 +76,8 @@
         @apply h-[250px] md:h-[400px] 
     }
     .About{
-        @apply flex flex-col size-full md:pl-[55px] 
-        gap-[40px] text-center md:text-left
+        @apply flex flex-col size-full 
+        gap-[40px] items-center text-center
       bg-[#5852FE] py-[50px]
     }
     .About h1{

@@ -775,8 +775,7 @@ video {
   align-items: center;
   justify-content: center;
   gap: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -861,19 +860,13 @@ video {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
   --tw-bg-opacity: 1;
   background-color: rgb(88 82 254 / var(--tw-bg-opacity));
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .About {
-    padding-left: 55px;
-    text-align: left;
-  }
 }
 
 .About h1 {
