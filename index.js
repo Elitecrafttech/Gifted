@@ -6,6 +6,14 @@ function menubar(){
     unicode1.classList.toggle('closetg')
     unicode2.classList.toggle('opentg')
 }
+
+function signin(){
+    window.location.href = "signin.html"
+}
+function started(){
+    window.location.href = "signup.html"
+}
+
 const content = document.querySelectorAll(".content");
 const allBtn = document.querySelectorAll(".btn");
 

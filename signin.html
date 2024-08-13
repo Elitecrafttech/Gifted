@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="./img/Gifted-Brainz-PNG.png">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/signin.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="form">
+                <div class="topicon">
+                    <img src="img/Gifted-Brainz-PNG.png" alt="">
+                    <h1>Sign In</h1>
+                </div>
+                <div class="field">
+                    <label>Enter Your Email
+                        <input type="email" name="" class="mail">
+                    </label>
+                    <label>Password
+                        <input type="text" name="" class="password">
+                    </label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="">
+                        <p>Remenber Me.</p>
+                    </div>
+                    <div class="gogle">
+                        <button onclick="signin()">Sign In</button>
+                        <p>OR</p>
+                        <div class="image"><img src="img/Gogle.png" alt=""></div>
+                    </div>
+                    <div class="acc">
+                        <p>Don’t Have An Account?</p>
+                        <button onclick="non()">click here.....</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="home">
+                <img src="img/arrow-left.png" alt="">
+                <button onclick="home()">Back To Home</button>
+            </div>
+            <div class="line1"></div>
+            <button>Privacy & Policy</button>
+            <div class="line2"></div>
+            <button>Terms & Condition</button>
+        </footer>
+    </main>
+    <script>
+        function signin(){
+            const mail = document.querySelector(".mail").value;
+            const password = document.querySelector(".password").value;
+
+            if(!mail){
+                alert("fill the require form")
+            }else if(!password){
+                alert("Complete all the require field")
+            }else{
+                window.location.href = "index.html"
+            }
+        }
+        function non(){
+            window.location.href = "signup.html";
+        }
+        function home(){
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

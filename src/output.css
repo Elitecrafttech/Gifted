@@ -1265,8 +1265,15 @@ video {
 
 .ui,.back,.front,.crypto {
   display: flex;
+  width: 25vw;
   align-items: center;
-  gap: 58%;
+  gap: 56%;
+}
+
+@media (min-width: 768px) {
+  .ui,.back,.front,.crypto {
+    width: ;
+  }
 }
 
 .ui1,.back1,.front1,.crpto1 {
@@ -1276,6 +1283,7 @@ video {
 }
 
 .ui1 h1,.back1 h1,.front1 h1,.crpto1 h1 {
+  font-size: 15px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1425,9 +1433,10 @@ video {
   width: 15px;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 5px;
 }
 
 .content {

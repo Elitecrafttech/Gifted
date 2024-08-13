@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="./img/Gifted-Brainz-PNG.png">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="form">
+                <div class="topicon">
+                    <img src="img/Gifted-Brainz-PNG.png" alt="">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="field">
+                    <label>Username
+                        <input type="text" name="" class="username">
+                    </label>
+                    <label>Enter Your Email
+                        <input type="email" name="" class="mail">
+                    </label>
+                    <label>Password
+                        <input type="text" name="" class="password">
+                    </label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="">
+                        <p>I Have Agree To The Terms & Conditions And The Privacy & Policy Of This Website.</p>
+                    </div>
+                    <div class="gogle">
+                        <button onclick="signup()">Sign Up</button>
+                        <p>OR</p>
+                        <div class="image"><img src="img/Gogle.png" alt=""></div>
+                    </div>
+                    <div class="acc">
+                        <p>Already Have An Existing Account?</p>
+                        <button onclick="non()">click here.....</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="home">
+                <img src="img/arrow-left.png" alt="">
+                <button onclick="home()">Back To Home</button>
+            </div>
+            <div class="line1"></div>
+            <button>Privacy & Policy</button>
+            <div class="line2"></div>
+            <button>Terms & Condition</button>
+        </footer>
+    </main>
+
+    <script>
+        function signup(){
+            const username = document.querySelector(".username").value;
+            const mail = document.querySelector(".mail").value;
+            const password = document.querySelector(".password").value;
+
+            if(!username){
+                alert("Username must not be blank");
+            }else if(!mail){
+                alert("mail must not be blank");
+            }else if(!password){
+                alert("Password is compulsory");
+            }else{
+                window.location.href = "index.html"
+            }
+        }
+        function non(){
+            window.location.href = "signin.html";
+        }
+        function home(){
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

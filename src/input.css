@@ -211,13 +211,15 @@
         
     }
     .ui,.back,.front,.crypto{
-        @apply flex gap-[58%] items-center
+        @apply flex gap-[56%] items-center
+        w-[25vw] md:w-[]
     }
     .ui1,.back1,.front1,.crpto1{
         @apply flex gap-[10px] items-center
     }
     .ui1 h1,.back1 h1,.front1 h1,.crpto1 h1{
         @apply font-bold text-white
+        text-[15px]
     }
     
     .uipage{
@@ -287,8 +289,9 @@
         @apply font-bold text-white
     }
     .btn{
-        @apply flex bg-white rounded-[50%]
-        w-[15px] h-[15px] justify-center items-center 
+        @apply flex bg-white rounded-[100%]
+        w-[15px] h-[15px] justify-center items-center
+        p-[5px]
     }
     .content{
         @apply w-[80vw] md:w-[31vw] text-[#CFCDFF] hidden
