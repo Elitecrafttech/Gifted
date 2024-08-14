@@ -619,6 +619,7 @@ video {
   height: 0vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -651,6 +652,7 @@ video {
   height: 0vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -677,15 +679,13 @@ video {
 .\!list ul {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 20px;
+  gap: 13px;
 }
 
 .list ul {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 20px;
+  gap: 13px;
 }
 
 .\!list button {
