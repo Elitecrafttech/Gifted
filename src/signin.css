@@ -133,7 +133,9 @@ input[type="checkbox"] {
     height: 30px;
   }
   @media screen and (max-width:950px) {
-    
+    section{
+      min-height: 60vh;
+    }
     .form{
       gap: 50px;
     }
@@ -147,7 +149,7 @@ input[type="checkbox"] {
       padding: 0px 15px;
     }
     .field input{
-        width: 94vw;
+        width: 92vw;
         padding: 20px 10px;
     }
     .showpass{
