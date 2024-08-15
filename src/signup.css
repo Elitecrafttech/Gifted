@@ -8,12 +8,6 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-main{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 100vh;
-}
 section{
     display: flex;
     align-items: center;
@@ -45,6 +39,10 @@ section{
     flex-direction: column;
     gap: 15px;
 }
+.user{
+  display: flex;
+  gap: 15px;
+}
 .field label{
     display: flex;
     flex-direction: column;
@@ -57,25 +55,59 @@ section{
     width: 21vw;
     height: 30px;
 }
+.plantype{
+  display: flex;
+  gap: 15px;
+}
+.code p{
+  font-size: 13px;
+  width: 20vw;
+}
+.code a{
+  font-weight: bold;
+  color: #5852FE;  
+}
+.plan select{
+  outline: none;
+  width: 21vw;
+  border: solid 1px black;
+  padding: 3px;
+  border-radius: 5px;
+  height: 30px;
+}
+.passw{
+  display: flex;
+  gap: 15px;
+}
+.passw img{
+  height: 30px;
+  align-self: self-end;
+}
+.confirm{
+  display: flex;
+  gap: 15px;
+}
 .checkbox{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 .checkbox p{
-    width: 15vw;
-    font-size: 10px;
+    /* width: 15vw; */
+    font-size: 13px;
 }
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
     accent-color: #5852FE;
   }
-  .gogle{
+  /* .gogle{
     display: flex;
     align-items: center;
-    gap: 40px;
-  }
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+  } */
   .gogle img{
     height: 18px;
   }
@@ -85,7 +117,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     font-size: 13px;
     padding: 5px;
-    width: 10vw;
+    width: 15vw;
   }
   .image{
     display: flex;
@@ -100,11 +132,11 @@ input[type="checkbox"] {
     padding: 10px;
   }
   .acc p{
-    font-size: 12px;
+    font-size: 14px;
   }
   .acc button{
     color: #5852FE;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
   footer{
@@ -132,13 +164,17 @@ input[type="checkbox"] {
     height: 30px;
   }
   @media screen and (max-width:950px) {
-    main{
-      gap: 13px;
+    section{
+      min-height: 145vh;
     }
     .form{
       gap: 35px;
     }
     .field{
+      gap: 20px;
+    }
+    .user{
+      flex-direction: column;
       gap: 20px;
     }
     .field label{
@@ -147,6 +183,31 @@ input[type="checkbox"] {
     .field input{
         width: 94vw;
         padding: 20px 10px;
+    }
+    .plantype{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .code p{
+      font-size: 17px;
+      width: 84vw;
+    }
+    .plan{
+      font-size: 17px;
+    }
+    .plan select{
+      width: 94vw;
+      height: 50px;
+    }
+    .passw{
+      flex-direction: column;
+    }
+    .passw img{
+      height: 50px;
+      align-self: center;
+    }
+    .confirm input{
+      width: 85vw;
     }
     .checkbox{
         gap: 15px;
@@ -188,7 +249,7 @@ input[type="checkbox"] {
         gap: 10px;
         padding: 40px 13px;
         font-size: 13px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
       }
   }

@@ -17,23 +17,49 @@
                     <h1>Sign Up</h1>
                 </div>
                 <div class="field">
-                    <label>Username
-                        <input type="text" name="" class="username">
+                    <div class="user">
+                        <label>Username
+                            <input type="text" name="" class="username" placeholder="e.g Johndoe">
+                        </label>
+                        <label>Enter Your Email
+                            <input type="email" name="" class="mail" placeholder="e.g johndoe@gmail.com">
+                        </label>
+                    </div>
+                    <div class="plantype">
+                        <label class="code"><p>
+                            Referral Code (in lowercase e.g toshmoney)
+                            Don't have a referral code?
+                            <a href="https://api.whatsapp.com/send/?phone=%2B2348135683307&text&type=phone_number&app_absent=0">Contact Admin</a>
+                        </p>
+                            <input type="text" name="refCode" value="toshmoney">
+                        </label>
+                        <label class="plan">
+                            Plan Type
+                        <select>
+                            <option>Weekly plan - N2500</option>
+                            <option>Monthly Plan - N4500</option>
+                        </select>
                     </label>
-                    <label>Enter Your Email
-                        <input type="email" name="" class="mail">
-                    </label>
-                    <label>Password
-                        <input type="text" name="" class="password">
-                    </label>
+                    </div>
+                    <div class="passw">
+                        <label>Password
+                            <input type="text" name="" class="password">
+                        </label>
+                        <label>Confirm Password
+                            <div class="confirm">
+                                <input type="text" name=""  class="passcode">
+                                <img src="img/password.png" alt="">
+                            </div>
+                        </label>
+                    </div>
                     <div class="checkbox">
                         <input type="checkbox" name="">
                         <p>I Have Agree To The Terms & Conditions And The Privacy & Policy Of This Website.</p>
                     </div>
                     <div class="gogle">
                         <button onclick="signup()">Sign Up</button>
-                        <p>OR</p>
-                        <div class="image"><img src="img/Gogle.png" alt=""></div>
+                        <!-- <p>OR</p> -->
+                        <!-- <a href="#" class="image"><img src="img/Gogle.png" alt=""></a> -->
                     </div>
                     <div class="acc">
                         <p>Already Have An Existing Account?</p>
