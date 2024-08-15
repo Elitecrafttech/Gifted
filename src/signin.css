@@ -133,9 +133,7 @@ input[type="checkbox"] {
     height: 30px;
   }
   @media screen and (max-width:950px) {
-    section{
-      min-height: 100vh;
-    }
+    
     .form{
       gap: 50px;
     }
