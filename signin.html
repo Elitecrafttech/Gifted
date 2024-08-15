@@ -21,7 +21,10 @@
                         <input type="email" name="" class="mail">
                     </label>
                     <label>Password
-                        <input type="text" name="" class="password">
+                        <div class="showpass">
+                            <input type="text" name="" class="password">
+                            <img src="img/password.png" alt="" class="showpass" onclick="showcode()">
+                        </div>
                     </label>
                     <div class="checkbox">
                         <input type="checkbox" name="">
@@ -29,8 +32,8 @@
                     </div>
                     <div class="gogle">
                         <button onclick="signin()">Sign In</button>
-                        <p>OR</p>
-                        <div class="image"><img src="img/Gogle.png" alt=""></div>
+                        <!-- <p>OR</p> -->
+                        <!-- <div class="image"><img src="img/Gogle.png" alt=""></div> -->
                     </div>
                     <div class="acc">
                         <p>Don’t Have An Account?</p>
@@ -69,6 +72,15 @@
         function home(){
             window.location.href = "index.html";
         }
+        function showcode(){
+        const passwordField = document.querySelector(".password");
+
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+        } else {
+            passwordField.type = 'password';
+        }
+    }
     </script>
 </body>
 </html>

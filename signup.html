@@ -19,10 +19,10 @@
                 <div class="field">
                     <div class="user">
                         <label>Username
-                            <input type="text" name="" class="username" placeholder="e.g Johndoe">
+                            <input type="text" required="Username" class="username" placeholder="e.g Johndoe">
                         </label>
                         <label>Enter Your Email
-                            <input type="email" name="" class="mail" placeholder="e.g johndoe@gmail.com">
+                            <input type="email" required="Email" class="mail" placeholder="e.g johndoe@gmail.com">
                         </label>
                     </div>
                     <div class="plantype">
@@ -35,7 +35,7 @@
                         </label>
                         <label class="plan">
                             Plan Type
-                        <select>
+                        <select class="select">
                             <option>Weekly plan - N2500</option>
                             <option>Monthly Plan - N4500</option>
                         </select>
@@ -43,12 +43,12 @@
                     </div>
                     <div class="passw">
                         <label>Password
-                            <input type="text" name="" class="password">
+                            <input type="password" required="password" class="password">
                         </label>
                         <label>Confirm Password
                             <div class="confirm">
-                                <input type="text" name=""  class="passcode">
-                                <img src="img/password.png" alt="">
+                                <input type="password" required="password"  class="passcode">
+                                <img src="img/password.png" alt="" class="showpass" onclick="showcode()">
                             </div>
                         </label>
                     </div>
@@ -85,13 +85,16 @@
             const username = document.querySelector(".username").value;
             const mail = document.querySelector(".mail").value;
             const password = document.querySelector(".password").value;
-
+            const confirm = document.querySelector(".passcode").value;
+            
             if(!username){
                 alert("Username must not be blank");
             }else if(!mail){
                 alert("mail must not be blank");
             }else if(!password){
                 alert("Password is compulsory");
+            }else if(password !== confirm){
+                alert("confirm your password")
             }else{
                 window.location.href = "index.html"
             }
@@ -102,6 +105,18 @@
         function home(){
             window.location.href = "index.html";
         }
+        function showcode(){
+        const passwordField = document.querySelector(".password");
+        const confirmField = document.querySelector(".passcode");
+
+        if (passwordField.type === 'password' && confirmField.type === 'password') {
+            passwordField.type = 'text';
+            confirmField.type = 'text';
+        } else {
+            passwordField.type = 'password';
+            confirmField.type = 'password';
+        }
+    }
     </script>
 </body>
 </html>

@@ -82,6 +82,7 @@ section{
 .passw img{
   height: 30px;
   align-self: self-end;
+  cursor: pointer;
 }
 .confirm{
   display: flex;
@@ -143,7 +144,7 @@ input[type="checkbox"] {
     background-color: #5852FE;
     color:#FFFFFF;
     width: 100%;
-    padding: 50px 250px;
+    padding: 30px 250px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -224,11 +225,11 @@ input[type="checkbox"] {
       }
       .gogle{
         padding: 0px 15px;
-        gap: 30px;
+        /* gap: 30px; */
       }
-      .gogle img{
+      /* .gogle img{
         height: 30px;
-      }
+      } */
       .gogle button{
         width: 55vw;
         padding: 8px;
@@ -247,7 +248,7 @@ input[type="checkbox"] {
         max-height: 100vh;
         justify-content: center;
         gap: 10px;
-        padding: 40px 13px;
+        padding: 15px 13px;
         font-size: 13px;
         position: fixed;
         bottom: 0;
